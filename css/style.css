@@ -4,9 +4,14 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
 .container {
     width: 45%;
-    margin: auto auto 10px;
+    margin: auto;
 }
 
 /* Sezione header */
@@ -49,10 +54,11 @@ padding: 25px 0 0;
 
 .jumbotron {
     height: 100%;
-    background-image: url("../img/banner.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/banner.jpg");
     background-size: cover;
     background-position: center;
     margin-bottom: 18px;
+    border-radius: 1em;
 }
 
 .jumbotron-text {
@@ -67,8 +73,6 @@ padding: 25px 0 0;
 
 .content {
     margin-bottom: 5px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 15px;
 }
 
 .content-top {
@@ -109,19 +113,19 @@ padding: 25px 0 0;
     height: 125px;
     background-size: cover;
     background-position: center;
-    border: 1px solid black;
+    border-radius: 1em;
 }
 
 .content-bg.left {
-    background-image: url("../img/img-3.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/img-3.jpg");
 }
 
 .content-bg.right {
-    background-image: url("../img/img-5.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/img-5.jpg");
 }
 
 .content-bg.center {
-    background-image: url("../img/banner-2.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/banner-2.jpg");
 }
 
 .side-bottom,
@@ -132,14 +136,13 @@ padding: 25px 0 0;
 .box h4 {
     margin-bottom: 10px;
 }
+
 /* Sezione footer */
 
 .lastline {
     height: 50px;
     text-align: center;
     line-height: 50px;
-    font-family: 'Raleway', sans-serif;
-    font-size: 13px;
 }
 
 .lastline > span {
