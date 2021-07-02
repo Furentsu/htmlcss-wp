@@ -81,17 +81,30 @@ padding: 25px 0 0;
     height: 50px;
 }
 
+.bold {
+    font-weight: 500;
+    font-size: 14px;
+}
+
 .content-top h1 {
     margin-bottom: 5px;
 }
 
 .content-top h5 {
-    font-size: 14px;
+    font-size: 13px;
     color: rgb(155, 155, 155);
 }
 
 .box {
     float: left;
+}
+
+.box h4 {
+    margin-bottom: 10px;
+}
+
+.box p {
+    color: rgb(155, 155, 155)
 }
 
 .clearfix::after {
@@ -135,9 +148,6 @@ padding: 25px 0 0;
     padding: 10px 0 0 0;
 }
 
-.box h4 {
-    margin-bottom: 10px;
-}
 
 /* Sezione footer */
 
@@ -149,5 +159,5 @@ padding: 25px 0 0;
 .lastline > span {
     vertical-align: middle;
     color: red;
-    font-size: 18px;
+    font-size: 20px;
 }
