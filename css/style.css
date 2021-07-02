@@ -22,9 +22,10 @@ header {
 }
 
 .logo {
-    width: 14%;
+    width: 15%;
     border: 1px solid transparent;
-    border-right-color: lightgray;
+    border-right-color: rgb(214, 214, 214);
+    margin-top: 5px;
     padding-right: 10px;
 }
 
@@ -45,7 +46,7 @@ padding: 25px 0 0;
 
 .navbar a {
     text-decoration: none;
-    color: lightgray;
+    color: rgb(155, 155, 155);
 }
 
 /* Sezione principale */
@@ -62,11 +63,15 @@ padding: 25px 0 0;
 }
 
 .jumbotron-text {
-    width: 65%;
+    width: 70%;
     height: 350px;
     padding: 200px 0 50px 25px;
     font-size: 15px;
     color: white;
+}
+
+.jumbotron-text h1 {
+    margin-bottom: 10px;
 }
 
     /* Sezione contenuti */
@@ -84,7 +89,8 @@ padding: 25px 0 0;
 }
 
 .content-top h5 {
-    color: lightgray;
+    font-size: 14px;
+    color: rgb(155, 155, 155);
 }
 
 .box {
@@ -140,9 +146,9 @@ padding: 25px 0 0;
 /* Sezione footer */
 
 .lastline {
-    height: 50px;
     text-align: center;
     line-height: 50px;
+    font-weight: bold;
 }
 
 .lastline > span {
