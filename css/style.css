@@ -6,7 +6,7 @@
 
 .container {
     width: 45%;
-    margin: 20px auto;
+    margin: auto auto 10px;
 }
 
 /* Sezione header */
@@ -45,9 +45,11 @@ padding: 25px 0 0;
 
 /* Sezione principale */
 
+    /* Jumbotron */
+
 .jumbotron {
     height: 100%;
-    background-image: url("../img/banner-2.jpg");
+    background-image: url("../img/banner.jpg");
     background-size: cover;
     background-position: center;
     margin-bottom: 18px;
@@ -55,35 +57,41 @@ padding: 25px 0 0;
 
 .jumbotron-text {
     width: 65%;
-    height: 300px;
-    padding: 150px 0 50px 25px;
+    height: 350px;
+    padding: 200px 0 50px 25px;
     font-size: 15px;
     color: white;
 }
 
+    /* Sezione contenuti */
+
 .content {
-    background-color: rgb(32, 109, 253);
+    margin-bottom: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.content-top {
+    height: 50px;
+}
+
+.content-top h1 {
     margin-bottom: 5px;
 }
 
-.box {
-    background-color: rgb(153, 222, 245);
+.content-top h5 {
+    color: lightgray;
 }
 
-.top {
-    height: 50px;
-    background-color: rgb(153, 222, 245);
+.box {
+    float: left;
+    height: 350px;
 }
 
 .clearfix::after {
     content: '';
     display: table;
     clear: both;
-}
-
-.box {
-    float: left;
-    height: 350px;
 }
 
 .float-side {
@@ -96,9 +104,46 @@ padding: 25px 0 0;
     margin: 10px;
 }
 
+.content-bg {
+    width: 100%;
+    height: 125px;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+.content-bg.left {
+    background-image: url("../img/img-3.jpg");
+}
+
+.content-bg.right {
+    background-image: url("../img/img-5.jpg");
+}
+
+.content-bg.center {
+    background-image: url("../img/banner-2.jpg");
+}
+
+.side-bottom,
+.center-bottom {
+    padding: 10px 0 0 0;
+}
+
+.box h4 {
+    margin-bottom: 10px;
+}
 /* Sezione footer */
 
-footer {
+.lastline {
     height: 50px;
-    background-color: rgb(137, 65, 204);
+    text-align: center;
+    line-height: 50px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+}
+
+.lastline > span {
+    vertical-align: middle;
+    color: red;
+    font-size: 18px;
 }
