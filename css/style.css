@@ -46,9 +46,19 @@ padding: 25px 0 0;
 /* Sezione principale */
 
 .jumbotron {
-    height: 300px;
-    background-color: rgb(219, 219, 104);
+    height: 100%;
+    background-image: url("../img/banner-2.jpg");
+    background-size: cover;
+    background-position: center;
     margin-bottom: 18px;
+}
+
+.jumbotron-text {
+    width: 65%;
+    height: 300px;
+    padding: 150px 0 50px 25px;
+    font-size: 15px;
+    color: white;
 }
 
 .content {
