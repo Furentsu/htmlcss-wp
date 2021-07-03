@@ -43,9 +43,31 @@ padding: 25px 0 0;
     padding: 0 5px;
 }
 
-.navbar a {
+/* Links animation effect */
+
+.fancy-link {
     text-decoration: none;
     color: rgb(155, 155, 155);
+    position: relative;
+}
+
+.fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.fancy-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 /* Sezione principale */
@@ -95,15 +117,15 @@ padding: 25px 0 0;
     color: rgb(155, 155, 155);
 }
 
-.box {
+.col {
     float: left;
 }
 
-.box h4 {
+.col h4 {
     margin-bottom: 10px;
 }
 
-.box p {
+.col p {
     color: rgb(155, 155, 155)
 }
 
@@ -123,7 +145,7 @@ padding: 25px 0 0;
     margin: 10px;
 }
 
-.content-bg {
+.col-bg {
     width: 100%;
     height: 125px;
     background-size: cover;
@@ -131,20 +153,20 @@ padding: 25px 0 0;
     border-radius: 1em;
 }
 
-.content-bg.left {
+.col-bg.left {
     background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/img-3.jpg");
 }
 
-.content-bg.right {
+.col-bg.right {
     background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/img-5.jpg");
 }
 
-.content-bg.center {
+.col-bg.center {
     background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("../img/banner-2.jpg");
 }
 
-.side-bottom,
-.center-bottom {
+.side-content,
+.center-content {
     padding: 10px 0 0 0;
 }
 
